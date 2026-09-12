@@ -1,0 +1,79 @@
+/* ===== TechShop ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f6fa; color: #1a1a2e; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Шапка */
+.topbar { background: #1e2a78; color: #fff; font-size: 13px; padding: 6px 0; }
+.topbar__inner { display: flex; justify-content: space-between; }
+.header { background: #2f3fb3; padding: 14px 0; }
+.header__inner { display: flex; align-items: center; gap: 20px; }
+.logo { color: #fff; font-size: 22px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.search { flex: 1; display: flex; }
+.search input { flex: 1; border: none; border-radius: 6px 0 0 6px; padding: 10px 14px; font-size: 14px; outline: none; }
+
+/* Кнопки */
+.btn { display: inline-block; border: none; cursor: pointer; text-decoration: none;
+       padding: 10px 20px; border-radius: 6px; font-size: 14px; font-weight: 600; }
+.btn--primary { background: #2f80ed; color: #fff; }
+.btn--primary:hover { background: #2569c4; }
+.btn--ghost { background: rgba(255,255,255,.15); color: #fff; border: 1px solid rgba(255,255,255,.5); }
+
+/* Навигация */
+.nav { background: #fff; border-bottom: 1px solid #e4e6f0; }
+.nav__inner { display: flex; gap: 24px; align-items: center; padding: 10px 20px; }
+.nav__inner a { color: #333; text-decoration: none; font-size: 14px; }
+.nav__inner a:hover { color: #2f80ed; }
+
+/* Hero */
+.hero { background: linear-gradient(120deg, #2f3fb3 0%, #4353d6 60%, #5b6ef0 100%);
+        color: #fff; padding: 60px 0; }
+.hero h1 { font-size: 42px; margin: 16px 0; line-height: 1.2; }
+.hero p { opacity: .9; margin-bottom: 28px; }
+.badge { background: rgba(255,255,255,.15); padding: 6px 14px; border-radius: 20px; font-size: 13px; }
+.hero__actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Преимущества */
+.perks { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+         gap: 20px; padding: 30px 20px; }
+.perk { background: #fff; border-radius: 12px; padding: 18px; display: flex; gap: 14px;
+        align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,.05); font-size: 14px; }
+.perk__icon { font-size: 26px; }
+
+/* Заголовки секций */
+.section-head { display: flex; justify-content: space-between; align-items: baseline;
+                margin: 30px 0 18px; }
+.section-head h2 { font-size: 24px; }
+.section-head span { color: #2f80ed; font-size: 14px; cursor: pointer; }
+
+/* Сетка товаров */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; padding-bottom: 20px; }
+.card { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,.05);
+        display: flex; flex-direction: column; gap: 8px; }
+.card:hover { box-shadow: 0 6px 20px rgba(47,128,237,.15); }
+.card__img { height: 120px; border-radius: 8px; background: linear-gradient(135deg,#eef2ff,#dbe4ff);
+             display: flex; align-items: center; justify-content: center; font-size: 48px; }
+.card__cat { font-size: 12px; color: #2f80ed; text-transform: uppercase; letter-spacing: .5px; }
+.card__name { font-size: 16px; }
+.card__desc { font-size: 13px; color: #666; flex: 1; }
+.card__price { display: flex; gap: 10px; align-items: baseline; }
+.card__old { color: #999; text-decoration: line-through; font-size: 13px; }
+.card__now { font-size: 20px; font-weight: 700; color: #1a1a2e; }
+.card__btn { width: 100%; }
+
+/* Форма обратной связи */
+.feedback-form { background: #fff; border-radius: 12px; padding: 20px; display: grid; gap: 12px;
+                 box-shadow: 0 2px 8px rgba(0,0,0,.05); max-width: 640px; }
+.feedback-form input, .feedback-form textarea { border: 1px solid #ddd; border-radius: 8px;
+                 padding: 12px 14px; font-size: 14px; font-family: inherit; }
+.feedback-form input:focus, .feedback-form textarea:focus { outline: none; border-color: #2f80ed; }
+.flash { background: #e8f5e9; border: 1px solid #a5d6a7; padding: 12px 16px;
+         border-radius: 8px; margin: 14px 0; max-width: 640px; }
+.feedback-title { margin: 26px 0 12px; }
+.feedback-list { display: grid; gap: 12px; max-width: 640px; margin-bottom: 30px; }
+.feedback-item { background: #fff; border-radius: 10px; padding: 14px 16px;
+                 box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+.feedback-item__meta { color: #888; font-size: 12px; margin-left: 8px; }
+.feedback-item p { margin-top: 6px; font-size: 14px; }
+
+.footer { background: #1e2a78; color: #cfd6ff; text-align: center; padding: 18px 0; margin-top: 30px; }
